@@ -4,25 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".MainActivity">
-
-    <Button
-        android:id="@+id/startQuiz_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Let's get going"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="100dp"
-        android:text="This is a technical Quiz."
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="130dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="This is a technical"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorPrimary"
+        android:textSize="28sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="Quiz."
+        android:textColor="#FE7158"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/startActivity_btn"
+        android:layout_width="235dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="250dp"
+        android:background="@color/colorShowCode"
+        android:fontFamily="@font/source_sans_pro"
+        android:gravity="center"
+        android:text="Let's get going"
+        android:textColor="#0B0A0C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

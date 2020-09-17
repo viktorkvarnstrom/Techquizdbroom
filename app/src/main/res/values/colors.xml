@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimaryDark">#241E26</color> // dark bakground
+    <color name="colorPrimary">#FFFDF5</color> // white
+    <color name="colorAccent">#FE7158</color> // orange
+    <color name="colorShowCode">#E9E7D5</color> // showcode color
 </resources>

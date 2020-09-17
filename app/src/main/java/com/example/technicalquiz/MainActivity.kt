@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
-        startQuiz_btn.setOnClickListener {
+        startActivity_btn.setOnClickListener {
             val intent = Intent(this, QuizActivity::class.java)
             startActivity(intent)
             finish()
