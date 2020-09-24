@@ -1,6 +1,10 @@
 package com.example.technicalquiz
 
 object Constants {
+
+    const val TOTAL_QUESTIONS: String = "total_question"
+    const val CORRECT_ANSWERS: String = "correct_answers"
+
     fun getQuestions(): ArrayList<Question> {
         val questionsList = ArrayList<Question>() // Dekalarerar en variable som blir en lista som ska innehålla alla question
 
