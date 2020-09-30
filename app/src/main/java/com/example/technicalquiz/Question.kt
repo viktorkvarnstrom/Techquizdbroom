@@ -3,7 +3,7 @@ package com.example.technicalquiz
 class Question (
     val id: Int,
     val question: String,
-    val image: Int? = null,
+    // val image: Int? = null,
     val optionOne: String,
     val optionTwo: String,
     val optionThree: String,

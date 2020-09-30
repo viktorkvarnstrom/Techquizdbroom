@@ -44,12 +44,13 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener {
 
         if (mCurrentPosition == mQuestionsList!!.size) {
             btn_submit.text = "FINISH"
+        } else {
+            btn_submit.text = "SUBMIT"
         }
 
         progressBar.progress = mCurrentPosition
-        text_progress.text = "$mCurrentPosition" + "/" + progressBar.max
+        text_progress.text = "$mCurrentPosition" + "/" + mQuestionsList!!.size
 
-        question.image?.let { quiz_showcase_image.setImageResource(it) }
 
         question_quiz.text = question!!.question
         option_one.text = question.optionOne
@@ -97,6 +98,11 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener {
                     val question = mQuestionsList?.get(mCurrentPosition - 1)
                     if (question!!.correctAnswer == mSelectedOptionPosition) {
                         mCorrectAnswers++
+                    }
+                    if (mCurrentPosition == mQuestionsList!!.size) {
+                        btn_submit.text = "FINISH"
+                    } else {
+                        btn_submit.text = "NEXT"
                     }
                     mSelectedOptionPosition = 0
                 }

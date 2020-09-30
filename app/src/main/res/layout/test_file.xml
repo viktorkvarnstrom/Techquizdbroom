@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuizActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/question_quiz"
+            android:layout_width="360dp"
+            android:layout_height="86dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="What is it this function need to return?"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:progressBarStyleHorizontal"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:indeterminate="false"
+            android:max="20"
+            android:minHeight="50dp"
+            android:progress="0"
+            android:progressTint="#FF7259"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/question_quiz" />
+
+
+        <TextView
+            android:id="@+id/text_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="@color/colorShowCode"
+            android:textColorHint="#FFFDF5"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/option_one"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/progressBar"
+            app:layout_constraintTop_toBottomOf="@+id/question_quiz"
+            app:layout_constraintVertical_bias="0.784"
+            tools:text="0/20" />
+
+        <TextView
+            android:id="@+id/option_one"
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="#CDFFFDF5"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar"
+            tools:text="A bool value" />
+
+        <TextView
+            android:id="@+id/option_two"
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="#CDFFFDF5"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option_one"
+            tools:text="Code" />
+
+        <TextView
+            android:id="@+id/option_three"
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="#CDFFFDF5"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option_two"
+            tools:text="Code" />
+
+        <TextView
+            android:id="@+id/option_four"
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="#CDFFFDF5"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option_three"
+            tools:text="Code" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="233dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/default_option_border_button"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option_four" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
