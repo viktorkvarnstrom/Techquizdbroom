@@ -36,9 +36,9 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="50dp"
             android:indeterminate="false"
-            android:max="20"
+            android:max="7"
             android:minHeight="50dp"
-            android:progress="0"
+            android:progress="3"
             android:progressTint="#FF7259"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/question_quiz" />
