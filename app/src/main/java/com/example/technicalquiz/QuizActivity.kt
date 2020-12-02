@@ -11,14 +11,16 @@ import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
+import androidx.room.Room
 import kotlinx.android.synthetic.main.activity_quiz.*
 import kotlin.math.log
 
 class QuizActivity : AppCompatActivity(), View.OnClickListener {
     @SuppressLint("SetTextI18n")
 
+    // private lateinit var db : AppDatabase
     private var mCurrentPosition: Int = 1
-    private var mQuestionsList: ArrayList<Question>? = null
+    private var mQuestionsList: List<Question>? = null
     private var mSelectedOptionPosition: Int = 0
     private var mCorrectAnswers: Int = 0
 
@@ -26,6 +28,13 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz)
 
+//        db = Room.databaseBuilder(applicationContext, AppDatabase::class.java, "technical-quiz")
+//            .fallbackToDestructiveMigration()
+//            .build()
+
+
+
+        // mQuestionsList = db.QuestionDao().getAll()
         mQuestionsList = Constants.getQuestions()
         setQuestion()
 
